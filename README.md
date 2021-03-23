@@ -45,7 +45,7 @@ after this some times need to `reboot`
 
 ### First step **git** config
 ```
-$ git config --global user.email "mohamamdgh.dev@gmail.com"
+$ git config --global user.email "mohammadgh.dev@gmail.com"
 $ git config --global user.name "Mohammad Ghasemi"
 ```
 
@@ -72,7 +72,7 @@ $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -
 $ echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 ```
 
-* open `~/.zshrc` with `nano ~/.zshrc` comand <br>
+* open `~/.zshrc` with `nano ~/.zshrc` command <br>
     * change oh my zsh theme to `agnoster` <br>
         - find and change `ZSH_THEME="agnoster"` line. <br>
     * and add this plugins `plugins=(git colored-man-pages zsh-autosuggestions sudo command-not-found)`
