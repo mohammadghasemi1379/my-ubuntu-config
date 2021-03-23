@@ -2,17 +2,23 @@
 alias droot="cd ~/../.."
 alias cls="clear"
 alias dir="ls -alF"
+
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get upgrade"
+
 alias etchosts="sudo nano /etc/hosts"
 alias hibernate="sudo systemctl hibernate"
-alias rmrf="rm -rf "
-alias fucku="rm -rf "
+
 alias openfile="nautilus "
 
-#laravel and php
+alias rmrf="rm -rf "
+alias fucku="rm -rf "
+
+
+#laravel and php and composer
 alias laravel="~/.config/composer/vendor/bin/laravel"
 alias pas="php artisan serve"
+alias pat="php artisan tinker"
 alias pa="php artisan "
 alias pclear="php artisan cache:clear && php artisan config:clear && php artisan route:clear"
 alias pcache="php artisan route:cache && php artisan config:cache"
@@ -23,13 +29,34 @@ alias ci="composer install"
 alias cda="composer dump-autoload"
 
 
+#git
+alias chekhabar="git status"                    #alternative alias "gst" if oh-my-zsh [git] plugin is enable
+
+alias veleshkon="git stash"                     #alternative alias "?" if oh-my-zsh [git] plugin is enable
+alias bebinamchimishe="git stash push -m "      #"message" alternative alias "gtsa" if oh-my-zsh [git] plugin is enable
+alias hichinashod="git stash apply "            #stash@{1} alternative alias "gstaa" if oh-my-zsh [git] plugin is enable
+alias veleshnakon="git stash pop"               #alternative alias "gstp" if oh-my-zsh [git] plugin is enable
+
+alias boroavalesh="git reset --hard "           #alternative "alias "grhh" if oh-my-zsh [git] plugin is enable 
+
+alias borobala="git push "                      #alternative alias "gp" if oh-my-zsh [git] plugin is enable 
+alias bezorborobala="git push --force "         #alternative alias "gpf!" if oh-my-zsh [git] plugin is enable 
+
+alias hamaro="git add ."                        #alternative alias "gaa" if oh-my-zsh [git] plugin is enable 
+
+alias taghir="git commit --amend"             #alternative alias "gc!" if oh-my-zsh [git] plugin is enable "nosh daro bad marg sohrab"
+alias inyeghesmat="git commit -m"             #"message" alternative alias "gcmsg" if oh-my-zsh [git] plugin is enable 
+
+
 #net tools
 # IP addresses
 alias whatsmyip="curl https://diagnostic.opendns.com/myip ; echo"
 alias ipshow="ip addr show"
 
+
 #network
 alias restartnet="sudo service network-manager restart"
+
 
 #kerio vpn
 alias kerioconfig='sudo dpkg-reconfigure kerio-control-vpnclient'
@@ -37,6 +64,7 @@ alias kerioreload='sudo /etc/init.d/kerio-kvc reload'
 alias keriorestart='sudo /etc/init.d/kerio-kvc restart'
 alias keriostart='sudo /etc/init.d/kerio-kvc start'
 alias keriostop='sudo /etc/init.d/kerio-kvc stop'
+
 
 #SYSTEM VPN
 alias vpnstart="nmcli con up "
