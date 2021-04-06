@@ -17,9 +17,9 @@ $ curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 $ sudo apt update    ;if not update with last command
 ```
 
-### Install PHP, nodejs, redis, mongodb, apache(httpd), ZSH, tilix and PHP Composer,
+### Install PHP 7.4 & 8.0, nodejs, redis, mongodb, apache(httpd), ZSH, tilix and PHP Composer,
 ```
-$ sudo apt install -y git apache2 php8.0 php8.0-fpm libapache2-mod-php8.0 php8.0-mysql libapachip php8.0-curl php8.0-redis e2-mod-fcgid php8.0-mbstring php8.0-dev php8.0-zip php8.0-curl mysql-server make nodejs gcc g++ unzip unrar tilix redis mongodb zsh zsh-syntax-highlighting
+$ sudo apt install -y git apache2 php8.0 php8.0-fpm libapache2-mod-php8.0 php8.0-mysql libapachip php8.0-curl php8.0-redis e2-mod-fcgid php8.0-mbstring php8.0-dev php8.0-zip php8.0-curl php8.0-dom php8.0-gd php7.4 php7.4-fpm php7.4-mysql php7.4-curl php7.4-redis php7.4-mbstring php7.4-dev php7.4-zip php7.4-curl php7.4-dom php7.4-gd mysql-server make nodejs gcc g++ unzip unrar tilix redis mongodb zsh zsh-syntax-highlighting
 
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mohammadghasemi1379/my-ubuntu-config/main/install_composer.sh)"
 ```
