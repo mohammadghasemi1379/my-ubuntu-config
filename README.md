@@ -19,7 +19,7 @@ $ sudo apt update    ;if not update with last command
 
 ### Install PHP, nodejs, redis, mongodb, apache(httpd), ZSH, tilix and PHP Composer,
 ```
-$ sudo apt install -y git apache2 php8.0 php8.0-fpm libapache2-mod-php8.0 php8.0-mysql libapachip php8.0-curl php8.0-redis e2-mod-fcgid php8.0-mbstring php8.0-dev php8.0-zip php8.0-curl mysql-server make nodejs gcc g++ unzip unrar tilix redis mongodb zsh zsh-theme-powerlevel9k zsh-syntax-highlighting
+$ sudo apt install -y git apache2 php8.0 php8.0-fpm libapache2-mod-php8.0 php8.0-mysql libapachip php8.0-curl php8.0-redis e2-mod-fcgid php8.0-mbstring php8.0-dev php8.0-zip php8.0-curl mysql-server make nodejs gcc g++ unzip unrar tilix redis mongodb zsh zsh-syntax-highlighting
 
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mohammadghasemi1379/my-ubuntu-config/main/install_composer.sh)"
 ```
@@ -70,11 +70,12 @@ $ sudo service apache2 restart && sudo service mysql restart
 $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 $ echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 * open `~/.zshrc` with `nano ~/.zshrc` command <br>
     * change oh my zsh theme to `agnoster` <br>
-        - find and change `ZSH_THEME="agnoster"` line. <br>
+        - find and change `ZSH_THEME="powerlevel10k/powerlevel10k"` line. <br>
     * and add this plugins `plugins=(git colored-man-pages zsh-autosuggestions sudo command-not-found)`
 
 ### Get version of node(& npm) and PHP
