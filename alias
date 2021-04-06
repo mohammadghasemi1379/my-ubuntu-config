@@ -16,6 +16,7 @@ alias fucku="rm -rf "
 
 
 #laravel and php and composer
+alias cpv"sudo update-alternatives --config php" #Chnage PHP Version
 alias laravel="~/.config/composer/vendor/bin/laravel"
 alias pas="php artisan serve"
 alias pat="php artisan tinker"
